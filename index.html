@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/849f2ac2fb.js" crossorigin="anonymous"></script>    
+    <script src="assets/js/script.js"></script>
+</head>
+<body class="main-container">
+
+<!-- --------------------------------------Accueil-------------------------------------- -->
+<a name="accueil"></a>
+
+<div id="header">
+  <div class="container">
+    <nav>
+      <h3><span class="Cspan">ALLAOUAT</span> Abdenour.</h3>
+      <ul id="sidemenu">
+        <li><a class="ligne" href="#accueil">Accueil</a></li>
+        <li><a class="ligne" href="#presentation">Présentation</a></li>
+        <li><a class="ligne" href="#veille-technologique">Veille-Technologique</a></li>
+        <li><a class="ligne" href="#projets">Projets</a></li>
+        <li><a class="ligne" href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <p>Actuellement en BTS Services Informatiques aux Organisation.</p>
+      <h1>Je m'appelle <span>ALLAOUAT </span><br> Abdenour j'ai 20 ans.</h1>
+    </div>
+  </div>
+</div>
+
+
+<!-- --------------------------------------Présentation-------------------------------------- -->
+<a name="presentation"></a>
+
+<div id="Presentation">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="assets/img/index/user.jpg">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">Présentation</h1>
+        <p>Je suis un étudiant en formation de BTS SIO(Services Informatiques aux Organisations). En Option SLAM (Solutions Logicielles et Applications Métiers)<br>
+          Passionné par la programmation, j'aspire à devenir un développeur Full-Stack.
+          Une fois mon BTS SIO, je souhaiterais poursuivre mes études en Licence Informatique et ensuite par un Master Dev Manager Full Stack.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Compétences</p>
+            <p class="tab-links"  onclick="opentab('experience')">Mes stages</p>
+          </div>
+            <div class="tab-content active-tab" id="skills">
+              <ul>
+                <li><span>Logiciels</span><br>Microsoft Office/Open Office - Visual Studio Code - XAMPP - Jmerise - Adobe Photoshop - GLPI - WinDev 28</li>
+                <li><span>Languages</span><br>HTML/CSS - PHP - Python - SQL - C# - WinDev</li>
+                <li><span>Content Management System</span><br>WIX - Joomla - WordPress</li>
+                <li><span>Soft Skills</span><br>Curiosité - Attitude positive - Esprit d'équipe - Ponctuel - Flexibilité et adaptabilité</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="experience">
+              <ul>
+                <li><span>Stage de 1ère année : <b>DAFPIC</b> (Délégué académique à la formation professionnelle initiale et continue) au Réctorat de Paris.</span><br> Durée du stage : 6 semaine</li>
+                <li><span>Stage de 2ème année : <b>A la recherche d'un stage</b> </span><br> Durée du stage : 6 semaine</li>
+                <br>
+                <a href="mesStage.html" target="_blank" class="ntb ntb2">Voir plus</a>
+              </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- -------------------------------------- Veille-Technologique -------------------------------------- -->
+
+<a name="veille-technologique"></a>
+<div id="V-T">
+
+  <div class="container">
+
+    <h1 class="sub-title"><a href="v-t.html" target="_blank" style="text-decoration: none;color: #fff;">Veille-Technologique</a></h1>
+    <div class="vt-list">
+
+      <div id="card1" class="card">
+        <img class="icons" src="assets/img/index/bitcoin.svg" alt="Image representant un bitcoin">
+        <h2>Qu'est ce que c'est qu'une Cryptomonnaies ?</h2>
+        <p>Apprenez-en plus sur Bitcoin, Ethereum, Litecoin et bien d'autres, ainsi que sur leur technologie et leur utilisation potentielle.
+         Explorez les avantages et les risques de ces monnaies numériques en pleine expansion et découvrez comment elles pourraient transformer l'avenir des transactions financières.</p>
+        <a href="https://fr.wikipedia.org/wiki/Cryptomonnaie" target="_blank">Voir plus</a>
+      </div>
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <div id="card1" class="card">
+        <img class="icons" src="assets/img/index/bitcoin.svg" alt="Image representant un bitcoin">
+        <h2>Suivez et découvrez les Tendances du Marché !</h2>
+        <p>Explorez l'univers fascinant des cryptomonnaies ! Ne manquez pas l'opportunité de suivre
+          les tendances du marché. Plongez dans les fluctuations passionnantes des valeurs numériques et restez informés(es) sur les dernières évolutions.</p>
+        <a href="https://cryptoast.fr/cours-crypto-monnaies.html" target="_blank">Voir plus</a>
+      </div>
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+      <div id="card3" class="card">
+        <img class="icons" src="assets/img/index/envelope-solid.svg" alt="Image representant une enveloppe">
+        <h2>Tenez vous à jour sur les Cryptomonnaies !</h2>
+        <p>Si vous êtes intéressé par les crypto-monnaies, il est essentiel de rester à jour sur les dernières tendances et les événements du marché.
+        Je vous invite à vous rendre sur la page d'actualités pour recevoir les dernières informations et analyses sur les crypto-monnaies.
+        De cette façon, vous pourrez suivre les évolutions du marché et être informé des opportunités et des risques qui se présentent.
+        Restez au courant des développements les plus récents pour prendre les bonnes décisions en matière d'investissement dans les crypto-monnaies.</p>
+        <a href="https://coinmarketcap.com/community/fr/articles" target="_blank">Voir plus</a>
+      </div>
+
+    </div>
+
+  </div>
+  
+</div>
+
+
+<!-- -------------------------------------- Projets -------------------------------------- -->
+
+<a name="projets"></a>
+<div id="Projets">
+  <div class="container">
+    <h1 class="sub-title">Mes Projets</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="assets/img/index/work-1.png" alt="Aperçu de mon tout premier projet réalisé en classe de Terminale">
+        <div class="layer">
+          <h3>Projets Jeux Vidéos</h3>
+          <p>En année de Première et Terminale, nous devions realisé des projets essentiellement des petits jeux simple et parfois de la mise en pratique des notions du cours <br> Vous trouverez ici des jeux comme : Morpion Serpent et autres...</p>
+          <a href="https://github.com/abdealt/mini_projet_python" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="assets/img/index/work-3.png" alt="À changer">
+        <div class="layer">
+          <h3>Outils Développés</h3>
+          <p>J'ai toujours aimé créer des petit outils, utilisant des fonctionnalité simple qui requièrent des base simple de la programmation. <br> Par exemple un créateur de Mot de passe, un mini virus invisible et etc..</p>
+          <a href="https://github.com/abdealt/mini_projet_python" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- -------------------------------------- Contact -------------------------------------- -->
+
+
+<a name="contact"></a>
+<div id="Contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact</h1>
+        <p><img src="assets/img/index/paper-plane-solid.svg" alt=""> abdenourallaouat.pro@gmail.com</p>
+        <p><img src="assets/img/index/mobile-solid.svg" alt=""> 06 63 71 60 32</p>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/abdenour-allaouat-103771261" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/abdealt" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <a href="assets/img/index/CV_ALLAOUAT-Abdenour_BTS-SIO.pdf" target="_blank" download class="ntb ntb2">Télécharger mon CV</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="nom" placeholder="Votre Nom" required>
+          <input type="text" name="prenom" placeholder="Votre Prenom" required>
+          <input type="text" name="email" placeholder="Votre Email" required>
+          <textarea name="message" rows="6" placeholder="Votre Message"></textarea>
+          <button type="reset" class="ntb ntb2">Effacer</button>
+          <button type="submit" class="ntb ntb2">Envoyer</button>
+        </form>
+        <div class="msg"></div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <h3>Abdenour ALLAOUAT</h3>
+    <p>Copyright © All Rights Reserved | Tous droits résérvés</p>
+  </div>
+</div>
+<!-- -------------------------------------- Appel JavaScript -------------------------------------- -->
+<script src="script.js"></script>
+<script src="menu.js"></script>
+</body>
+</html>

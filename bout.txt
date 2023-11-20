@@ -1,0 +1,7 @@
+<div class="tab-content" id="doc">
+              <ul>
+                <li><p>Vous trouverez ici toute les documentations au cours de ma formation de BTS SIO</p>
+                  <a href="ressources/Fiche E4 BTS-SIO Abdenour ALLAOUAT.xlsx" target="_blank" download class="ntb ntb2">Télécharger la Fiche E4 Compétences</a>
+                </li>
+              </ul>
+            </div>
