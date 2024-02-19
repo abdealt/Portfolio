@@ -435,7 +435,7 @@ form .btn2{
 
 /* Page mesStages */
 
-.custom-slider { display: none; }
+.custom-slider { display: none;}
 .slide-container {
     max-width: 800px;
     position: relative;

@@ -1,0 +1,4 @@
+dans la requete il y a une clause WHERE, qui peut être completer
+par l'utilisateur pour filter selon ces choix donc, il a fallut mettre plusieurs filtres
+dans le language windev on peux mettre des balise exemple %1 ou %2 dans une variable string
+qui pourront être completer avec la fonction ChaineConstruit(nomDeLaVariableàCompléter, CeQueVaContenir(%1), CeQueVaContenir(%2))
