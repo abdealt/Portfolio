@@ -1,0 +1,116 @@
+/* ::::: Message body - intended to be loaded inside the viewer's iframe ::::: */
+
+.MailMessagePane body {
+	margin: 0;
+	padding: 9px;
+}
+
+.MailMessagePane pre {
+	border: 0pt;
+	padding: 0pt;
+	background: none;
+	font-size: 2.5ex;
+	line-height: 2.8ex;
+  
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.MailMessagePane div {
+	min-height: 1em;
+}
+
+
+.MailMessagePane div.mimepart.text.plain {
+	font-size: 2ex;
+	line-height: 2.8ex;
+}
+
+
+/* ::::: Inline attached Messages ::::: */
+.MailMessagePane .attachmentSeparator {
+	margin: 0.8em 0;
+	padding: 0 0.8em;
+	height: 1em;
+	border-top-width: 2px;
+	border-bottom-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+.MailMessagePane pre.inlineText { /* no-wrap */
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  background-color: transparent;
+  border: none;
+}
+
+.MailMessagePane .MailMessagePane-inlineContainer {
+}
+
+.MailMessagePane .inlineImage {
+	display: block;
+	margin: 0px auto;
+	/* required for IE centering... */
+	text-align: center;
+}
+
+.MailMessagePane .inlineImageLoading {
+	visibility: hidden;
+}
+
+.MailMessagePane .inlineImageZoomable{
+	/* TODO:: add support for other browsers */
+	cursor: -moz-zoom-in
+}
+
+
+.MailMessagePane .inlineImageZoomable.inlineImageZoomed {
+	/* TODO:: add support for other browsers */
+	cursor: -moz-zoom-out
+}
+
+.MailMessagePane .inlineHeaderPane {
+  font-size: 11px;
+  background-color: #EEE; /* NOT THEMED */
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: #CCC;
+  overflow: hidden;
+  vertical-align: top;
+  padding-top: 2px;
+}
+
+.MailMessagePane .inlineHeaderPane table{
+  font-size: 11px;
+}
+
+.MailMessagePane .inlineHeaderPane tr{
+  vertical-align: top;
+}
+
+.MailMessagePane .inlineHeaderPane .header .label{
+  padding: 0 .5em 0 0.5em;
+  text-align: right;
+  vertical-align: top;
+  width: 5em;
+  font-weight: bold;
+}
+
+.MailMessagePane .inlineHeaderPane .subjectvalue {  
+  font-weight: bold;
+  overflow: hidden;  
+}
+
+.MailMessagePane .inlineHeaderPane .headerValue .datevalue {
+  white-space: nowrap;
+}
+
+.MailMessagePane .inlineHeaderPane .headerValue.address {
+}
