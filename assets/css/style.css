@@ -151,6 +151,7 @@ h3{
     width: 50%;
 }
 
+
 .tab-content ul li{
     list-style: none;
     margin:10px 0;
@@ -170,6 +171,11 @@ h3{
     display: block;
 }
 
+
+/* ------------- Partie BTS" ------------- */
+.parag {
+    height: fit-content;
+}
 
 /* ------------- Partie "Veille-Technologique" ------------- */
 
