@@ -442,9 +442,9 @@ form .btn2{
 /* Page mesStages */
 
 .swiper {
-    width: 1400px;
+    width: 1920px;
     height: 900px;
-  }
+}
 
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.5);
