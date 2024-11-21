@@ -1,545 +1,71 @@
-/* activ */
-
-/* ------------- Partie "Accueil" ------------- */
-*{
-    margin: 0;
-    padding: 0;
+body {
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
 }
-
-html{
-    scroll-behavior: smooth;
+.navbar-brand {
+    font-weight: 700;
 }
-
-.main-container{
-    background: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 11),rgba(75,83,91,0.8), rgba(0, 0, 0, 1));
-    color: #fff;
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #f8f9fa;
+    margin-top: 2rem;
 }
-
-#header{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(../img/index/background.svg);
-    background-size: cover;
-    background-position: center;
-}
-
-
-.container{
-    padding: 10px 10%;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-
-nav ul li a{
-    color:#fff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-}
-
-nav ul li a::after{
-    content: '';
-    width: 0%;
-    height: 3px;
-    background: rgb(58, 124, 195);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-nav ul li a:hover::after{
-    width: 100%;
-    background-color: #3A7CC3;
-}
-
-h3{
-    width: 300px;
-}
-.Cspan{
-    color: #3A7CC3;
-    width: 140px;
-}
-
-.header-text{
-    margin-top: 40%;
-    font-size: 30px;
-}
-
-.header-text h1{
-    font-size: 60px;
-}
-
-.header-text h1 span{
-    color: #3A7CC3;
-}
-/* ------------- Partie "Présentation" ------------- */
-
-#presentation{
-    padding: 80px 0;
-    color: #ababab;
-    
-}
-
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.about-col-1{
-    flex-basis: 35%;
-}
-
-.about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
-}
-
-.about-col-2{
-    flex-basis: 60%;
-}
-
-.sub-title{
-    font-size: 60px;
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
     font-weight: 600;
-    color: #fff;
 }
 
-.tab-titles{
-    display:flex;
-}
-
-.tab-titles-marg{
-    margin: 0 50px;
-}
-
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
+/* Frise chronologique */
+.timeline {
     position: relative;
+    padding: 0;
+    margin: 2rem 0;
 }
 
-.tab-links::after{
-    content: "";
-    width: 0%;
-    height: 3px;
-    position: absolute;
-    background: #3A7CC3;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-
-.tab-links.active-link::after{
-    width: 50%;
-}
-
-
-.tab-content ul li{
-    list-style: none;
-    margin:10px 0;
-}
-
-.tab-content ul li span{
-    color: #3A7CC3;
-    font-size: 14px;
-}
-
-.tab-content{
-    display: none;
-}
-
-.tab-content.active-tab{
-    
-    display: block;
-}
-
-
-/* ------------- Partie BTS" ------------- */
-.parag {
-    height: fit-content;
-}
-
-/* ------------- Partie "Veille-Technologique" ------------- */
-
-
-#V-T{
-    padding: 30px 0;
-}
-
-.vt-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.vt-list div{
-    color: black;
-    background: rgb(255, 255, 255);
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-right: 10px;
-}
-
-.card{
-    border-radius: 40px;
-    transition: 0.5s;
-}
-
-.icons{
-    width: 40px;
-    height: 40px;
-    transition: 0.5s;
-}
-
-
-/* .vt-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-    transition: 50s;
-} */
-
-.vt-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-
-.vt-list div a{
-    transition: 0.5s;
-    padding: 10px;
-    border-radius: 40px;
-    border: #fff 1px solid;
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.vt-list div:hover{
-    background: #3A7CC3;
-    transform: translateY(-10px);
-}
-
-
-#card1.card:hover,#card2.card:hover,#card3.card:hover  {
-    box-shadow: #092a4db0 0px 48px 100px 0px;
-    transition: 0.5s;
-    background-color: #3A7CC3;
-    color: #fff;
-    border: 1px solid #fff;
-    
-}
-
-#card1.card:hover .icons, #card2.card:hover .icons, #card3.card:hover .icons{
-    transition: 0.5s;
-    filter: invert(100%);
-}
-
-/* ------------- Partie "Projets" ------------- */
-
-
-#Projets{
-    padding: 50px 0;
-}
-
-.work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;   
-}
-
-.work{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-
-}
-
-.work img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: 0.5s;
-    
-}
-
-.layer{
-    width: 100%;
-    height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6),#3A7CC3);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
+.timeline-item {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: 0.5s;
+    margin-bottom: 2rem;
 }
 
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.layer a{
-    margin-top: 20px;
-    color: #3A7CC3;
-    text-decoration: none; 
-    font-size: 18px; 
-    line-height: 60px;
-    background:#fff;
-    width: 60px;
-    height: 60px;
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
     border-radius: 50%;
-    text-align: center;
+    flex-shrink: 0;
 }
 
-.layer .fa-external-link-alt{
-    color: #3A7CC3;
+.timeline-content {
+    margin-left: 1rem;
+    border-left: 2px solid #007bff;
+    padding-left: 1rem;
 }
 
-.work:hover .layer{
-    height: 100%;
+.timeline-content h4 {
+    margin: 0;
+    color: #007bff;
+    font-weight: 600;
 }
 
-.work img:hover {
-    transform: scale(1.1);
+.timeline-content p {
+    margin: 0;
+    color: #555;
 }
 
-
-/* ------------- Partie "Contact" ------------- */
-
-
-.contact-left{
-    flex-basis: 35%;
+/* Section expériences */
+.experience {
+    margin-bottom: 2rem;
 }
 
-
-.contact-right{
-    flex-basis: 60%;
+.experience h4 {
+    color: #007bff;
+    font-weight: 600;
 }
 
-.contact-left p{
-    margin-top: 30px;
-}
-
-.contact-left img{
-    filter: invert(100%);
-    margin-right: 15px;
-    font-size: 25px;
-    width: 15px;
-    height: 15px;
-}
-
-.social-media{
-    margin-top: 30px;
-}
-
-.social-media a{
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: #ababab;
-    display: inline-block;
-    transition: 0.5s;
-}
-
-
-.social-media a:hover{
-    color: #3A7CC3;
-    transform: translateY(-5px);
-}
-
-.ntb{
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #3A7CC3;
-    padding: 14px 50px;
-    border-radius: 6px;
-}
-
-.ntb.ntb2{
-    font-size: 18px;
-    display: inline-block;
-    background: #3A7CC3;
-    cursor: pointer;
-}
-
-.contact-right form{
-    width: 100%;
-}
-
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #ababab;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
-
-form .btn2{
-    padding: 14px 60px;
-
-    margin-top: 20px;
-}
-
-.copyright{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding: 25px;
-    background: #ababab;
-    font-weight: 300;
-    margin-top: 20px;
-}
-
-#msg{
-    color: #61b752;
-    margin-top: -10px;
-    display: block;
-}
-
-
-/* Page mesStages */
-
-.swiper {
-    width: 1920px;
-    height: 900px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.5);
-}
-.slide-text {
-    position: absolute;
-    color: black;
-    font-size: 15px;
-    padding: 15px;
-    bottom: 15px;
-    width: 100%;
-    text-align: center;
-}
-.slide-index {
-    color: #ffffff;
-    font-size: 13px;
-    padding: 15px;
-    position: absolute;
-    top: 0;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1s;
-}
-@keyframes fade {
-    from {opacity: 0}
-    to {opacity: 1}
-}
-
-/*--------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* FORM DU CSS RESPONSIVE*/
-
-nav .fas{
-    display: none;
-}
-
-@media only screen and (max-width: 600px){
-    #header{
-        background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(../img/index/background-mobile.svg);
-    }
-    .header-text{
-        margin-top: 100%;
-        font-size: 16px;
-    }
-    .header-text h1{
-        font-size: 30px;
-    }
-    nav .fas{
-        display: block;
-        font-size: 25px;
-    }
-    nav ul{
-        background: #ababab;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 25px;
-    }
-    nav ul .fas{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-    .sub-title{
-        font-size: 40px;
-    }
-    .about-col-1, .about-col-2{
-        flex-basis: 100%;
-    }
-    .about-col-1{
-        margin-bottom: 30px;
-    }
-    .about-col-2{
-        font-size: 14px;
-    }
-    .tab-links{
-        font-size: 16px;
-        margin-right: 20px;
-    }
-    .contact-left, .contact-right{
-        flex-basis: 100%;
-    }
-    .copyright{
-        font-size: 14px;
-    }
-
+.experience p {
+    margin: 0.5rem 0 0;
+    color: #555;
 }

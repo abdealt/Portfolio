@@ -2,259 +2,164 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/849f2ac2fb.js" crossorigin="anonymous"></script>    
-    <script src="assets/js/script.js"></script>
+    <title>Portfolio - ALLAOUAT Abdenour</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        
+    </style>
 </head>
-<body class="main-container">
-
-<!-- --------------------------------------Accueil-------------------------------------- -->
-<a name="accueil"></a>
-
-<div id="header">
-  <div class="container">
-    <nav>
-      <h3><span class="Cspan">ALLAOUAT</span> Abdenour.</h3>
-      <ul id="sidemenu">
-        <li><a class="ligne" href="#accueil">Accueil</a></li>
-        <li><a class="ligne" href="#presentation">Présentation</a></li>
-        <li><a class="ligne" href="#formation">Formation</a></li>
-        <li><a class="ligne" href="#veille-technologique">Veille-Technologique</a></li>
-        <li><a class="ligne" href="#projets">Projets</a></li>
-        <li><a class="ligne" href="#contact">Contact</a></li>
-        <i class="fas fa-times" onclick="closemenu()"></i>
-      </ul>
-      <i class="fas fa-bars" onclick="openmenu()"></i>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand">Mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#parcours">Parcours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiences">Expériences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <div class="header-text">
-      <p>Actuellement en BTS Services Informatiques aux Organisation.</p>
-      <h1>Je m'appelle <span>ALLAOUAT </span><br> Abdenour j'ai 20 ans.</h1>
-    </div>
-  </div>
-</div>
 
-<!-- --------------------------------------Présentation-------------------------------------- -->
-<a name="presentation"></a>
-
-<div id="Presentation">
+    <!-- Header Section -->
+<!-- Header Section -->
+<header class="bg-light py-5">
   <div class="container">
-    <div class="row">
-      <div class="about-col-1">
-        <img src="assets/img/index/user.jpg">
-      </div>
-      <div class="about-col-2">
-        <h1 class="sub-title">Présentation</h1>
-        <p>Je suis un étudiant en formation de BTS SIO(Services Informatiques aux Organisations). En Option SLAM (Solutions Logicielles et Applications Métiers)<br>
-          Passionné par la programmation, j'aspire à devenir un développeur Full-Stack.
-          Une fois mon BTS SIO, je souhaiterais poursuivre mes études en Licence Informatique et ensuite par un Master Dev Manager Full Stack.</p>
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Compétences</p>
-            <p class="tab-links"  onclick="opentab('experience')">Mes stages</p>
+      <div class="row align-items-center">
+          <!-- Colonne pour la photo -->
+          <div class="col-md-4 text-center">
+              <div class="photo-container">
+                  <img src="assets/img/user.jpg" alt="Ma photo" class="img-fluid rounded-circle" style="max-width: 80%; height: auto;">
+              </div>
           </div>
-            <div class="tab-content active-tab" id="skills">
-              <ul>
-                <li><span>Logiciels</span><br>Microsoft Office/Open Office - Visual Studio Code - XAMPP - Jmerise - Adobe Photoshop - GLPI - WinDev 28</li>
-                <li><span>Languages</span><br>HTML/CSS - PHP - Python - SQL - C# - WinDev</li>
-                <li><span>Content Management System</span><br>WIX - Joomla - WordPress</li>
-                <li><span>Soft Skills</span><br>Curiosité - Attitude positive - Esprit d'équipe - Ponctuel - Flexibilité et adaptabilité</li>
-              </ul>
+          <!-- Colonne pour le texte de présentation -->
+          <div class="col-md-8">
+              <h1 class="display-4">Bienvenue sur mon portfolio</h1>
+              <p class="lead">
+                  Je m'appelle Abdenour ALLAOUAT, étudiant en alternance à l’ECE Paris.<br>
+                  Actuellement âgé de <span id="age">21</span> ans, je suis passionné par l'informatique.
+              </p>
+          </div>
+      </div>
+  </div>
+</header>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title">À propos</h2>
+            <p class="text-center">
+                Étudiant en Bachelor Concepteur/Développeur d’Applications à l’ECE Paris, je me spécialise dans le développement web et logiciel. 
+                Avec une expérience en alternance au Rectorat de Paris, je maîtrise des outils comme Symfony, Laravel et JavaScript. 
+                Mon objectif est de devenir développeur Full Stack tout en contribuant à des projets innovants et durables.
+            </p>
+            <div class="text-center mt-4">
+                <a href="https://www.linkedin.com/in/abdenour-allaouat" target="_blank" class="btn btn-primary">Voir mon Linkedin</i></a>
+                <a href="https://github.com/abdealt" target="_blank" class="btn btn-secondary">Explorer mon Github</a>
+                <a href="assets/public/CV_Abdenour_Allaouat.pdf" target="_blank" class="btn btn-danger">Télécharger mon CV</a>
             </div>
-            <div class="tab-content" id="experience">
-              <ul>
-                <li><span>Stage de 1ère année : <b>DAFPIC</b> (Délégué académique à la formation professionnelle initiale et continue) au Réctorat de Paris.</span><br> Durée du stage : 6 semaines</li>
-                <li><span>Stage de 2ème année : <b>DAFPIC</b> (Délégué académique à la formation professionnelle initiale et continue) au Réctorat de Paris.</span><br> Durée du stage : 6 semaines</li>
-                <br>
-                <a href="stage1.html" target="_blank" class="ntb ntb2">Voir plus</a>
-              </ul>
-            </div>
         </div>
-    </div>
-  </div>
-</div>
-<!-- ----------------------------------------------- BTS SIO ------------------------------------------ -->
-<a name="formation"></a>
-<div id="Formation">
-  <div class="container">
-    <div class="row">
-      <div class="about-col-2">
-        <h1 class="sub-title">QU'EST CE QUE LE BTS SIO ?</h1>
-        <p>Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations, s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou de développeur. Pour par la suite intégrer directement le marché du travail ou continuer des études, dans le domaine de l'informatique.</p>
-        <br>
-        <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('SISR')">Option SISR</p>
-          <p class="tab-links"  onclick="opentab('SLAM')">Option SLAM</p>
-        </div>
-        <br>
-        <div class="tab-content active-tab" id="SISR">
-          <p>
-            L’acronyme <span style="color: #3067A2;"><b>SISR</b></span> signifie «<b>Solutions d’infrastructure, systèmes et réseaux</b>». Voici des précisions sur cette formation et ses débouchés.
-            L’option SISR est destinée aux étudiants qui s’orientent vers les métiers liés à la conception et la maintenance d’infrastructures réseaux. Assurer la sécurité, la maintenance et l’installation des réseaux et des équipements informatiques font partie des principales missions des futurs administrateurs, techniciens ou pilotes d’exploitation.
-            Des cours plus généraux viendront compléter la formation et apporter des compétences plus généralistes, permettant ainsi aux diplômés d’être opérationnels dans n’importe quelle entreprise.
-            <br><br>
-            <u>Voici les débouchés avec un BTS SIO SISR:</u>
-            <ul><b>
-            <li>- Technicien de production</li>
-            <li>- Technicien d’infrastructure</li>
-            <li>- Technicien réseau et télécoms</li>
-            <li>- Technicien systèmes et réseaux</li>
-            <li>- Administrateur systèmes et réseaux</li>
-            <li>- Support systèmes et réseaux</li>
-            <li>- Pilote d’exploitation</li>
-            <li>- Informaticien support et déploiement</li>
-            </b></ul>
-          </p>
-        </div>  
+    </section>
+
+    <!-- Parcours Section -->
+    <section id="parcours" class="py-5 bg-light">
+      <div class="container">
+          <h2 class="section-title">Mon Parcours</h2>
+          <div class="timeline">
+              <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                      <h4>2019 - 2022</h4>
+                      <p>Bac Général spécialité Mathématiques, Anglais et Numériques et Sciences de informatique.</p>
+                  </div>
+              </div>
+              <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                      <h4>2022 - 2024</h4>
+                      <p>BTS Services Informatiques aux Organisations (SIO), option SLAM (Solutions Logicielles et Applications Métiers).</p>
+                  </div>
+              </div>
+              <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                      <h4>2024 - aujourd’hui</h4>
+                      <p>Bachelor Concepteur/Développeur d’Applications en alternance.</p>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="tab-content" id="SLAM">
-        <p>
-          Le signe <span style="color: #3067A2;"><b>SLAM</b></span> signifie «<b>Solutions Logicielles et Applications Métier</b>».
-          Voici quelques indications sur cette seconde option du BTS SIO, ainsi des précisions sur cette formation et ses débouchés.
-          L’option SLAM est destinée aux étudiants qui s’orientent vers les métiers liés à la conception et la maintenance de programmes applicatifs. Grâce à des cours spécifiques, les diplômés seront capables de gérer un parc informatique ou d’administrer un réseau au sein d’une entreprise.
-          Ils pourront également gérer l’intégration, la sécurisation et la configuration des serveurs, mais aussi des postes clients et des équipements d’interconnexion.
-          <br><br>
-          <u>Voici les débouchés avec un BTS SIO SLAM:</u>
-          <ul><b>
-          <li>- Développeur d'applications informatiques</li>
-          <li>- Développeur informatique</li>
-          <li>- Analyste d'applications ou d'études</li>
-          <li>- Analyste programmeur</li>
-          <li>- Chargé d'études informatiques</li>
-          <li>- Informaticien d'études</li>
-          <li>- Programmeur analyste</li>
-          <li>- Programmeur d'applications</li>
-          <li>- Responsable des services applicatifs</li>
-          <li>- Technicien d'études informatiques</li>
-          </b></ul>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- -------------------------------------- Veille-Technologique -------------------------------------- -->
-
-<a name="veille-technologique"></a>
-<div id="V-T">
-
-  <div class="container">
-
-    <h1 class="sub-title">Veille-Technologique</h1>
-    <div class="vt-list">
-
-      <div id="card1" class="card">
-        <img class="icons" src="assets/img/index/bitcoin.svg" alt="Image representant un bitcoin">
-        <h2>Qu'est ce que c'est qu'une Blockchain ?</h2>
-        <p>Découvrez comment cette innovation révolutionnaire redéfinit les normes de sécurité, de transparence et de confiance dans divers domaines, de la finance à la santé en passant par la logistique.</p>
-        <a href="vt/definition.html" target="_blank">Voir plus</a>
-      </div>
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-            <div id="card1" class="card">
-        <img class="icons" src="assets/img/index/bitcoin.svg" alt="Image representant un bitcoin">
-        <h2>Les domaines d'applications : Innovant</h2>
-        <p>Découvrez comment la blockchain révolutionne le monde dans des domaines aussi variés que le vote électronique sécurisé, la gestion transparente des chaînes d'approvisionnement mondiales etc...  Un univers où la technologie redéfinit la confiance, la transparence et l'efficacité, ouvrant la voie à de nouvelles opportunités et transformations.</p>
-        <a href="vt/domaine.html" target="_blank">Voir plus</a>
-      </div>
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-      <div id="card3" class="card">
-        <img class="icons" src="assets/img/index/envelope-solid.svg" alt="Image representant une enveloppe">
-        <h2>Tenez vous à jour sur l'univers de la Blockchain et ses cryptomonnaies !</h2>
-        <p>Plongez dans le monde fascinant de la blockchain et découvrez les toutes dernières innovations qui transforment notre façon de penser les transactions des cryptomonnaies, la sécurité des données et la gestion des processus.</p>
-        <a href="v-t.html" target="_blank">Voir plus</a>
-      </div>
-
-    </div>
-
-  </div>
+  </section>
   
-</div>
-
-
-<!-- -------------------------------------- Projets -------------------------------------- -->
-
-<a name="projets"></a>
-<div id="Projets">
-  <div class="container">
-    <h1 class="sub-title">Mes Projets</h1>
-    <div class="work-list">
-      <div class="work">
-        <img src="assets/img/index/work-1.png" alt="Aperçu de mon tout premier projet réalisé en classe de Terminale">
-        <div class="layer">
-          <h3>Jeux vidéos réalisé en classe de 1ère</h3>
-          <p>En année de Première et Terminale, nous devions realisé des projets essentiellement des petits jeux simple et parfois de la mise en pratique des notions du cours <br> Vous trouverez ici des jeux comme : Morpion Serpent et autres...</p>
-          <a href="https://github.com/abdealt/mini_projet_python" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+  <section id="experiences" class="py-5">
+      <div class="container">
+          <h2 class="section-title">Mes Expériences</h2>
+          <div class="experience">
+            <h4>Stage BTS SIO Première année - Service Statistique Académique</h4>
+            <p>
+                Création d’une application Windows avec WLanquage pour alerter les établissements scolaires par courriel en cas d’anomalies présente sur les données des élèves.
+            </p>
         </div>
+          <div class="experience">
+              <h4>Stage BTS SIO deuxième année - 
+                Délégué académique à la formation professionnelle initiale et continue</h4>
+              <p>
+                  Développement d’une carte interactive avec la bibliothèque leaflet, intégré dans une application Windows faite avec WLanquage. La carte regroupe les établissements proposant des formations POST-BAC.<br>
+              </p>
+          </div>
+          <div class="experience">
+              <h4>Contant d'apprentissage chez ANT-Conseil - Bachelor 3 </h4>
+              <p>J'occupe acctuelement le poste de développeur d'application chez <a class="text-decoration-none" href="https://ant-conseil.fr/">ANT-Conseil</a>. Je travaille pour apporter des solutions logicielles notament avec le language GO, Python et React.</p>
+          </div>
       </div>
+  </section>
 
-      <div class="work">
-        <img src="assets/img/index/work-2.png" alt="À changer">
-        <div class="layer">
-          <h3>Jeu réalisé en 1ère année de BTS</h3>
-          <p>En première année de BTS, nous devions realisé un jeu fait uniquement en HTML, CSS et JavaScript <br> Vous trouverez ci-dessous le jeu:</p>
-          <a href="jeu cible/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <form action="https://formspree.io/f/xqkonvvw" method="POST" class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Adresse email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Votre email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Votre message"></textarea>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                      <button type="reset" class="btn btn-danger w-100">Effacer</button>
+                  </div>
+                  <div class="col-6">
+                      <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+                  </div>
+              </div>
+            </form>
         </div>
-      </div>
+    </section>
 
-      <div class="work">
-        <img src="assets/img/index/work-3.png" alt="À changer">
-        <div class="layer">
-          <h3>Outils Développés</h3>
-          <p>Ici vous retrouverez des réalisations faites pendant ma scolarité, avant le BAC, mais aussi pendant mon temps libre</p>
-          <a href="https://github.com/abdealt/Realisations" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div style="text-align: center;">
-    <a href="assets/Tableau de synthèse - ALLAOUAT Abdenour - Epreuve E4.pdf" target="_blank" download class="ntb ntb2">Fiche compétences (FicheE4)</a>
-  </div>
-</div>
-
-
-
-
-
-<!-- -------------------------------------- Contact -------------------------------------- -->
-<a name="contact"></a>
-<div id="Contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h1 class="sub-title">Contact</h1>
-        <p><img src="assets/img/index/paper-plane-solid.svg" alt=""> abdenourallaouat.pro@gmail.com</p>
-        <p><img src="assets/img/index/mobile-solid.svg" alt=""> 06 63 71 60 32</p>
-        <div class="social-media">
-          <a href="https://www.linkedin.com/in/abdenour-allaouat-103771261" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/abdealt" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-        <a href="assets/img/index/CV_ALLAOUAT-Abdenour_BTS-SIO.pdf" target="_blank" download class="ntb ntb2">Télécharger mon CV</a>
-      </div>
-      <div class="contact-right">
-        <form action="https://formspree.io/f/xqkonvvw" method="POST">
-          <label>Votre courriel:
-            <input type="email" name="email" placeholder="Votre email">
-          </label>
-          <label>Votre message:
-            <textarea name="message" placeholder="Votre message"></textarea>
-          </label>
-          <button type="submit" class="ntb ntb2">Envoyer</button>
-          <button type="reset" class="ntb ntb2">Effacer</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  <div class="copyright">
-    <h3>Abdenour ALLAOUAT</h3>
-    <p>Copyright © All Rights Reserved | Tous droits résérvés</p>
-  </div>
-</div>
-<!-- -------------------------------------- Appel JavaScript -------------------------------------- -->
-<script src="script.js"></script>
-<script src="menu.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ALLAOUAT Abdenour. Tous droits réservés.</p>
+    </footer>
+    <!-- Custom js -->
+    <script src="assets/js/age.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>
