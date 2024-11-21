@@ -69,3 +69,30 @@ footer {
     margin: 0.5rem 0 0;
     color: #555;
 }
+
+/* Section compétences */
+
+.progress-bar.html-css {
+    background-color: #E44D26; /* HTML/CSS */
+}
+
+.progress-bar.python {
+    background-color: #3572A5; /* Python */
+}
+
+.progress-bar.javascript {
+    background-color: #F7DF1E; /* JavaScript */
+    color: #000; /* Texte lisible sur fond jaune */
+}
+
+.progress-bar.php {
+    background-color: #8892BF; /* PHP */
+}
+
+.progress-bar.go {
+    background-color: #00ADD8; /* Go */
+}
+
+.progress-bar.java {
+    background-color: #5382A1; /* Java */
+}
