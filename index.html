@@ -1,181 +1,227 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio - ALLAOUAT Abdenour</title>
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
 
-    <body>
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ALLAOUAT Abdenour</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand">Mon Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experiences">Expériences</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
-                <li class="nav-item"><a class="nav-link" href="#career">Parcours</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiences">Expériences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#career">Parcours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
-    
+
     <!-- Header Section -->
     <header class="py-5 bg-light">
         <div class="container">
             <div class="row align-items-center">
-            <!-- Colonne pour la photo -->
+                <!-- Colonne pour la photo -->
                 <div class="col-md-4 text-center">
                     <div class="photo-container">
-                    <img src="assets/img/user.jpg" alt="Ma photo" class="img-fluid rounded-circle" style="max-width: 80%; height: auto;">
+                        <img src="assets/img/user.jpg" alt="Ma photo" class="img-fluid rounded-circle" style="max-width: 80%; height: auto;">
                     </div>
                 </div>
                 <!-- Colonne pour le texte de présentation -->
                 <div class="col-md-8">
                     <h1 class="display-4">Bienvenue sur mon portfolio</h1>
                     <p class="lead">
-                    Je m'appelle Abdenour ALLAOUAT, étudiant en alternance à l’ECE Paris.<br>
-                    Actuellement âgé de <span id="age">21</span> ans, je suis passionné par l'informatique.
+                        Je m'appelle Abdenour ALLAOUAT, étudiant en alternance à l’<a class="text-decoration-none" target="_blank" href="https://www.ece.fr/">ECE Paris</a>.<br>
+                        Actuellement âgé de <span id="age">21</span> ans, je suis passionné par l'informatique.
                     </p>
                 </div>
             </div>
         </div>
     </header>
 
-
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
             <h2 class="section-title">À propos</h2>
             <p class="text-center">Étudiant en Bachelor Concepteur/Développeur d’Applications à l’ECE Paris, je me spécialise dans le développement web et logiciel.
-                Avec une expérience en alternance au Rectorat de Paris, je maîtrise des outils comme Symfony, JavaScript, Go et Java.
-                Mon objectif est de me spécialiser dans l'informatique, travailler dans le développement ou dans l'IA, tout en contribuant à des projets innovants et durables.</p>
+                Avec une expérience au Rectorat de Paris, et mon apprentissage chez <a class="text-decoration-none" href="https://ant-conseil.fr/">ANT-Conseil</a>, je maîtrise des outils comme Symfony, JavaScript, Go et Java.
+                Mon objectif est de me spécialiser dans l'informatique, travailler dans le développement ou dans l'Intéligence Artificielle, tout en contribuant à des projets innovants et durables.</p>
             <div class="text-center mt-4">
-                <a href="https://www.linkedin.com/in/abdenour-allaouat" target="_blank" class="btn btn-primary">Voir mon Linkedin</i></a>
+                <a href="https://www.linkedin.com/in/abdenour-allaouat" target="_blank" class="btn btn-primary">Voir mon Linkedin</a>
                 <a href="https://github.com/abdealt" target="_blank" class="btn btn-secondary">Explorer mon Github</a>
                 <a href="assets/public/CV_Abdenour_Allaouat.pdf" target="_blank" class="btn btn-danger">Télécharger mon CV</a>
             </div>
         </div>
     </section>
 
-
-
+    <!-- Expériences Section -->
     <section id="experiences" class="py-5 bg-light">
         <div class="container">
-        <h2 class="section-title">Expériences</h2>
+            <h2 class="section-title">Expériences</h2>
             <div class="experience">
-            <h4>Stage BTS SIO Première année - Service Statistique Académique</h4>
-            <p>Création d’une application Windows avec WLanquage pour alerter les établissements scolaires par courriel en cas d’anomalies présente sur les données des élèves.</p>
+                <h4>Stage BTS SIO Première année - Service Statistique Académique</h4>
+                <p>Création d’une application Windows avec WLanquage pour alerter les établissements scolaires par courriel en cas d’anomalies présente sur les données des élèves.</p>
             </div>
             <div class="experience">
                 <h4>Stage BTS SIO deuxième année - Délégué académique à la formation professionnelle initiale et continue</h4>
-                <p>Développement d’une carte interactive avec la bibliothèque leaflet, intégré dans une application Windows faite avec WLanquage. La carte regroupe les établissements proposant des formations POST-BAC.<br></p>
+                <p>Développement d’une carte interactive avec la bibliothèque leaflet, intégré dans une application Windows faite avec WLanquage. La carte regroupe les établissements proposant des formations POST-BAC.</p>
             </div>
             <div class="experience">
-                <h4>Contant d'apprentissage chez ANT-Conseil - Bachelor 3</h4>
-                <p>J'occupe acctuelement le poste de développeur d'application chez <a class="text-decoration-none" href="https://ant-conseil.fr/">ANT-Conseil</a>. Je travaille pour apporter des solutions logicielles notament avec le language GO, Python et React.</p>
+                <h4>Contrat d'apprentissage chez ANT-Conseil - Bachelor 3</h4>
+                <p>J'occupe actuellement le poste de développeur d'application chez <a class="text-decoration-none" href="https://ant-conseil.fr/">ANT-Conseil</a>. Je travaille pour apporter des solutions logicielles notamment avec le langage GO, Python et React.</p>
             </div>
         </div>
     </section>
 
+    <!-- Compétences Section -->
     <section id="skills" class="py-5">
         <div class="container">
             <h2 class="section-title text-center">Compétences</h2>
             <div class="row">
-            <!-- Colonne 1 : Langages -->
-            <div class="col-md-6 mb-4">
-                <h3>Langages</h3>
-                <div class="mb-3">
-                    <p>HTML/CSS</p>
-                    <div class="progress">
-                        <div class="progress-bar html-css" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                <!-- Colonne 1 : Langages -->
+                <div class="col-md-6 mb-4">
+                    <h3>Langages</h3>
+                    <div class="mb-3">
+                        <p>HTML/CSS</p>
+                        <div class="progress">
+                            <div class="progress-bar html-css" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p>Python</p>
+                        <div class="progress">
+                            <div class="progress-bar python" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p>JavaScript</p>
+                        <div class="progress">
+                            <div class="progress-bar javascript" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p>PHP</p>
+                        <div class="progress">
+                            <div class="progress-bar php" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p>Java</p>
+                        <div class="progress">
+                            <div class="progress-bar go" role="progressbar" style="width: 70%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">70%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p>GO</p>
+                        <div class="progress">
+                            <div class="progress-bar java" role="progressbar" style="width: 70%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">70%</div>
+                        </div>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <p>Python</p>
-                    <div class="progress">
-                        <div class="progress-bar python" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+
+                <!-- Colonne 2 : Langues -->
+                <div class="col-md-6 mb-4">
+                    <h3>Langues parlées</h3>
+                    <div class="mb-3">
+                        <p>Français</p>
+                        <div class="progress">
+                            <div class="progress-bar french" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Bilingue</div>
+                        </div>
                     </div>
-                </div>
-                <div class="mb-3">
-                    <p>JavaScript</p>
-                    <div class="progress">
-                        <div class="progress-bar javascript" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    <div class="mb-3">
+                        <p>Kabyle</p>
+                        <div class="progress">
+                            <div class="progress-bar kabyle" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Bilingue</div>
+                        </div>
                     </div>
-                </div>
-                <div class="mb-3">
-                    <p>PHP</p>
-                    <div class="progress">
-                        <div class="progress-bar php" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    <div class="mb-3">
+                        <p>Anglais</p>
+                        <div class="progress">
+                            <div class="progress-bar english" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">B2</div>
+                        </div>
                     </div>
-                </div>
-                <div class="mb-3">
-                    <p>Java</p>
-                    <div class="progress">
-                        <div class="progress-bar go" role="progressbar" style="width: 70%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    <div class="mb-3">
+                        <p>Espagnol</p>
+                        <div class="progress">
+                            <div class="progress-bar spanish" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">B1</div>
+                        </div>
                     </div>
-                </div>
-                <div class="mb-3">
-                    <p>GO</p>
-                    <div class="progress">
-                        <div class="progress-bar java" role="progressbar" style="width: 70%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    <div class="mb-3">
+                        <p>Arabe</p>
+                        <div class="progress">
+                            <div class="progress-bar arabic" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">A1</div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Colonne 2 : Frameworks -->
-            <div class="col-md-6 mb-4">
-                <h3>Frameworks et Librairies</h3>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Symfony</li>
-                    <li class="list-group-item">Bootstrap</li>
-                    <li class="list-group-item">Leaflet.js</li>
-                    <li class="list-group-item">Node.js</li>
-                    <li class="list-group-item">Angular</li>
-                </ul>
-            </div>
-        </div>
+            <div class="row">
+                <!-- Colonne 3 : Logiciels et Outils -->
+                <div class="col-md-6 mb-4">
+                    <h3>Logiciels et Outils</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Git / GitHub</li>
+                        <li class="list-group-item">Docker</li>
+                        <li class="list-group-item">MariaDB / MySQL</li>
+                        <li class="list-group-item">Airtable</li>
+                        <li class="list-group-item">Visual Studio Code</li>
+                        <li class="list-group-item">Microsoft Office 365</li>
+                    </ul>
+                </div>
 
-        <div class="row">
-            <!-- Colonne 3 : Logiciels et Outils -->
-            <div class="col-md-6 mb-4">
-                <h3>Logiciels et Outils</h3>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Git / GitHub</li>
-                    <li class="list-group-item">Docker</li>
-                    <li class="list-group-item">MariaDB / MySQL</li>
-                    <li class="list-group-item">Airtable</li>
-                    <li class="list-group-item">Visual Studio Code</li>
-                    <li class="list-group-item">Microsoft Office 365</li>
-                </ul>
+                <!-- Colonne 4 : Frameworks et Librairies -->
+                <div class="col-md-6 mb-4">
+                    <h3>Frameworks et Librairies</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Symfony</li>
+                        <li class="list-group-item">Bootstrap</li>
+                        <li class="list-group-item">Leaflet.js</li>
+                        <li class="list-group-item">Node.js</li>
+                        <li class="list-group-item">Angular</li>
+                        <li class="list-group-item">Bulma</li>
+                    </ul>
+                </div>
             </div>
 
-            <!-- Colonne 4 : Méthodes de Travail -->
-            <div class="col-md-6 mb-4">
-                <h3>Méthodes de Travail</h3>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Méthodes Agiles (Scrum, Kanban)</li>
-                    <li class="list-group-item">Gestion de projet en équipe</li>
-                    <li class="list-group-item">Documentation technique</li>
-                </ul>
+            <div class="row">
+                <!-- Colonne 5 : Méthodes de Travail -->
+                <div class="col-md-6 mb-4">
+                    <h3>Méthodes de Travail</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Méthodes Agiles (Scrum, Kanban)</li>
+                        <li class="list-group-item">Gestion de projet en équipe</li>
+                        <li class="list-group-item">Documentation technique</li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 6 : Certifications -->
+                <div class="col-md-6 mb-4">
+                    <h3>Certifications</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Airtable</li>
+                        <li class="list-group-item">Python</li>
+                        <li class="list-group-item">Make</li>
+                    </ul>
+                </div>
             </div>
-        </div>
         </div>
     </section>
-
-
 
     <!-- Parcours Section -->
     <section id="career" class="py-5 bg-light">
@@ -184,20 +230,20 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h4>2019 - 2022</h4>
-                    <p>Bac Général spécialité Mathématiques, Anglais et Numériques et Sciences de informatique.</p>
+                    <div class="timeline-content">
+                        <h4>2019 - 2022</h4>
+                        <p>Bac Général spécialité Mathématiques, Anglais et Numériques et Sciences de l'informatique.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h4>2022 - 2024</h4>
-                    <p>BTS Services Informatiques aux Organisations (SIO), option SLAM (Solutions Logicielles et Applications Métiers).</p>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2022 - 2024</h4>
+                        <p>BTS Services Informatiques aux Organisations (SIO), option SLAM (Solutions Logicielles et Applications Métiers).</p>
+                    </div>
                 </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h4>2024 - aujourd’hui</h4>
                         <p>Bachelor Concepteur/Développeur d’Applications en alternance.</p>
@@ -236,10 +282,12 @@
     <footer>
         <p>&copy; 2024 ALLAOUAT Abdenour. Tous droits réservés.</p>
     </footer>
-    <!-- Custom js -->
+
+    <!-- Custom JS -->
     <script src="assets/js/age.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
-    </body>
+</body>
+
 </html>

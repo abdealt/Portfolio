@@ -1,15 +1,18 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
 .navbar-brand {
     font-weight: 700;
 }
+
 footer {
     text-align: center;
     padding: 1rem 0;
     background-color: #f8f9fa;
     margin-top: 2rem;
 }
+
 .section-title {
     text-align: center;
     margin-bottom: 2rem;
@@ -72,6 +75,64 @@ footer {
 
 /* Section compétences */
 
+/* Langues */
+.progress-bar {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Langue : Français */
+.progress-bar.french {
+    background-color: #0055A4; /* Bleu de la France */
+    background-image: url('../img/france.png'); 
+    background-size: 30px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+}
+
+/* Langue : Kabyle */
+.progress-bar.kabyle {
+    background-color: #006747; /* Vert typique des couleurs kabyles */
+    background-image: url('../img/kabyle.png'); 
+    background-size: 30px 20px;
+    background-repeat: no-repeat;
+    background-position:left center;
+    padding-left: 30px;
+}
+
+/* Langue : Anglais */
+.progress-bar.english {
+    background-color: #A80000; /* Rouge de l'Angleterre */
+    background-image: url('../img/uk.png'); 
+    background-size: 30px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+}
+
+/* Langue : Espagnol */
+.progress-bar.spanish {
+    background-color: #AA151B; /* Rouge de l'Espagne */
+    background-image: url('../img/spain.png'); 
+    background-size: 30px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+}
+
+/* Langue : Arabe */
+.progress-bar.arabic {
+    background-color: #007A3D; /* Vert typique de la région arabe */
+    background-image: url('../img/emirates.png'); 
+    background-size: 30px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+}
+
+/* Section Compétences - Langages */
 .progress-bar.html-css {
     background-color: #E44D26; /* HTML/CSS */
 }
